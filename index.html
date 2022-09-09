@@ -17,9 +17,9 @@
 			<nav class="site-nav">
 				<a lang="en" href="./index.html"  class="logo"><span class="accent">Web</span>Studio</a>
 				<ul class="ul-nav">
-					<li class="item"><a href="./index.html" class="link current">Студія</a></li>
-					<li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-					<li class="item"><a href="./portfolio.html" class="link">Контакти</a></li>
+					<li class="item"><a href="./index.html" class="link current choice">Студія</a></li>
+					<li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+					<li class="item"><a href="./portfolio.html" class="link current">Контакти</a></li>
 				</ul>
 			</nav>
 			<ul class="connection-nav">
@@ -44,8 +44,18 @@
 	<main>
 		<section class="section-hero">
 			<h1 class="hero-title">Ефективні рішення для<br> вашого бізнесу</h1>
-			<button type="button" class="button primary">Замовити послугу</button>
+			<button data-modal-open type="button" class="button primary">Замовити послугу</button>
 		</section>
+
+		<div data-modal class="backdrop is-hidden">
+			<div class="modal">
+				<button class="button-svg" data-modal-close>
+					<svg class="svg-exit">
+						<use href="./img/symbol-defs1.svg#icon-close1"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
 		
 		<section class="section-work">
 			<div class="box container-work">
@@ -87,9 +97,18 @@
 			<div class="box container-about">
 				<h2 class="section-title">Чим ми займаємося</h2>
 				<ul class="about-flex">
-					<li class="flex-img"><img src="./img/box_1.jpg" alt="Монітор" width="370"></li>
-					<li class="flex-img"><img src="./img/box_2.jpg" alt="Телефон" width="370"></li>
-					<li class="flex-img"><img src="./img/box_3.jpg" alt="Планшет" width="370"></li>
+					<div class="position-img">
+						<p class="title-position">Десктопні додатки</p>
+						<li class="flex-img"><img src="./img/box_1.jpg" alt="Монітор" width="370"></li>
+					</div>
+					<div class="position-img">
+						<p class="title-position">Мобільні додатки</p>
+						<li class="flex-img"><img src="./img/box_2.jpg" alt="Телефон" width="370"></li>
+					</div>
+					<div class="position-img">
+						<p class="title-position">Дизайнерські рішення</p>
+						<li class="flex-img"><img src="./img/box_3.jpg" alt="Планшет" width="370"></li>
+					</div>
 				</ul>
 			</div>
 		</section>
@@ -339,6 +358,6 @@
 			</ul>
 		</div>
 	</footer>
-	
+	<script src="./js/modal.js"></script>
 </body>
 </html>
