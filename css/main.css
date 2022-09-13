@@ -69,6 +69,11 @@ img {
     height: auto;
 }
 
+button {
+    outline: none;
+}
+
+
 
 
  /*Header*/
@@ -154,10 +159,6 @@ img {
     margin-bottom: 50px;
 }
 
-/* .box {
-    margin: 0 auto;
-    width: 1200px;
-} */
 
 .headerr {
     width: 1600px;
@@ -175,18 +176,12 @@ img {
     width: 1200px;
 }
 
-/* .container-work {
-    width: 1200px;
-    height: 248px;
-    padding: 0px 15px;
-    margin: 0 auto;
-} */
-
-.box-navigation {
+.container-box {
     display: flex;
-    padding: 0 15px;
-    margin-left: 215px;
-    margin-right: 215px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 1200px;
 }
 
 .connection-nav {
@@ -228,29 +223,6 @@ img {
     color: var(--accent-color);
     position: relative;
 }
-
- /* .current::after {
-    position: absolute;
-    content: "";
-    transition: opacity 250ms var(--animation);
-    background-color: var(--accent-color);
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    border-radius: 2px; 
-    opacity: 0;
- } */
-
- /* .current:hover::after,
- .current:focus::after {
-    color: var(--accent-color);
-    opacity: 1;
- } */
-
- /* .current {
-    position: relative;
- } */
 
 
 
@@ -619,12 +591,6 @@ input:focus-within ~ .svg-email {
     padding-bottom: 94px;
 }
 
-/* .container-about{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    width: 1200px;
-} */
 
 
 
@@ -649,12 +615,6 @@ input:focus-within ~ .svg-email {
     margin-top: 10px;
 }
 
-/* .container-team {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    width: 1200px;
-} */
 
 .section-team {
     background-color: var(--background-color);
@@ -736,13 +696,6 @@ input:focus-within ~ .svg-email {
 
 /* Clients */
 
-
-/* .container-clients {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-} */
 
 .section-clients {
     padding-top: 94px;
@@ -875,6 +828,7 @@ input:focus-within ~ .svg-email {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    
 }
 
 .form-button:active,
@@ -899,7 +853,7 @@ input:focus-within ~ .svg-email {
     overflow: hidden;
 }
 
-.animation-img:hover .animation-overlay {
+.flex-element:hover .animation-overlay {
     opacity: 1;
     transform: translateY(0);
 }
@@ -932,18 +886,6 @@ input:focus-within ~ .svg-email {
     padding: 20px 24px;
 }
 
-/* .animation-overlay {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: transform 250ms var(--animation);
-    transform: translateY(100%);
-    background-color: var(--animation-color);
-} */
-
-
 .flex-element {
     margin-bottom: 30px;
     position: relative;
@@ -971,7 +913,13 @@ input:focus-within ~ .svg-email {
 .ul-outline:focus {
     box-shadow: 1px 4px 6px rgba(181, 73, 73, 0.16),
     0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
+    0px 1px 1px rgba(0, 0, 0, 0.12);   
+}
+
+
+.ul-outline:focus .animation-overlay {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .ul-outline {
@@ -992,15 +940,8 @@ input:focus-within ~ .svg-email {
     line-height: 2;
     letter-spacing: 0.06em;
     margin: 0;
-    /* margin: 20px 24px 0px; */
 }
 
-/* .container-project {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    width: 1200px;
-} */
 
 .section-project {
     padding-top: 94px;
@@ -1013,7 +954,6 @@ input:focus-within ~ .svg-email {
     line-height: 1.88;
     margin-top: 4px;
     margin-bottom: 0;
-    /* margin: 0px 24px 20px; */
 }
 
 .no-gap {
